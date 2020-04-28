@@ -3,6 +3,7 @@
        DATA DIVISION.
            WORKING-STORAGE SECTION.
            01 WS-FIND          PIC 9(5).
+               88 WS-VALID-NUM  VALUE  1 THRU 10000.
            01 WS-PRIM          PIC 9(5) VALUE 2.
            01 WS-NEX           PIC 9(5) VALUE ZERO.
            01 WS-LIMIT         PIC 9(5).
@@ -15,9 +16,15 @@
        PROCEDURE DIVISION.
        
        MAIN-PARAGRAPH.
-           DISPLAY "Enter a positive integer".
-           ACCEPT WS-FIND.
-           COMPUTE WS-LIMIT = WS-FIND ** 0.5.
+           DISPLAY "Enter a positive integer, max 10000:"
+           ACCEPT WS-FIND
+
+           IF NOT WS-VALID-NUM  
+              DISPLAY "Invalid entry."
+              PERFORM FINISH
+           END-IF
+
+           COMPUTE WS-LIMIT = WS-FIND ** 0.5
            >>D  DISPLAY "Iterate until :" WS-LIMIT.
 
            PERFORM POPULATE-PARAGRAPH.
@@ -39,6 +46,7 @@
        
            PERFORM DISPLAY-TABLE-PARAGRAPH.
        
+       FINISH.
        STOP RUN.
        
        POPULATE-PARAGRAPH.
