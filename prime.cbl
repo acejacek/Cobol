@@ -2,15 +2,15 @@
        PROGRAM-ID. PrimeNumbers.
        DATA DIVISION.
            WORKING-STORAGE SECTION.
-           01 WS-FIND          PIC 9(4).
-           01 WS-PRIM          PIC 9(4) VALUE 2.
-           01 WS-NEX           PIC 9(4) VALUE ZERO.
-           01 WS-LIMIT         PIC 9(4).
+           01 WS-FIND          PIC 9(5).
+           01 WS-PRIM          PIC 9(5) VALUE 2.
+           01 WS-NEX           PIC 9(5) VALUE ZERO.
+           01 WS-LIMIT         PIC 9(5).
            01 MISC-VALUES.
-               05 IND           PIC 9(4) VALUE ZERO.
-               05 COUNTER       PIC 9(4) VALUE ZERO.
+               05 IND           PIC 9(5) VALUE ZERO.
+               05 COUNTER       PIC 9(5) VALUE ZERO.
            01 PRIMES-TABLE OCCURS 1 TO 10000 TIMES    *> limit
-               DEPENDING ON WS-FIND INDEXED BY PRIMES-IDX PIC 9(4).
+               DEPENDING ON WS-FIND INDEXED BY PRIMES-IDX PIC 9(5).
                
        PROCEDURE DIVISION.
        
@@ -18,6 +18,8 @@
            DISPLAY "Enter a positive integer".
            ACCEPT WS-FIND.
            COMPUTE WS-LIMIT = WS-FIND ** 0.5.
+           >>D  DISPLAY "Iterate until :" WS-LIMIT.
+
            PERFORM POPULATE-PARAGRAPH.
        
            *> remove all 2^n
@@ -28,7 +30,9 @@
                SEARCH PRIMES-TABLE
                    WHEN PRIMES-TABLE (PRIMES-IDX) > WS-PRIM
                        MOVE PRIMES-TABLE (PRIMES-IDX) TO WS-PRIM
-                       PERFORM REMOVE-PARAGRAPH
+                       IF WS-PRIM <= WS-LIMIT THEN
+                           PERFORM REMOVE-PARAGRAPH
+                       END-IF
                END-SEARCH  
        
            END-PERFORM.
@@ -48,6 +52,7 @@
        *> REMOVE PRIME^2 FROM TABLE
            MULTIPLY WS-PRIM BY WS-PRIM GIVING WS-NEX.
            >>D  DISPLAY "Found :" WS-PRIM.
+           >>D  DISPLAY "Removing from? :" WS-NEX.
            PERFORM VARYING IND FROM WS-NEX BY WS-PRIM 
               UNTIL IND > WS-FIND
               >>D  DISPLAY "REMOVE: " IND
