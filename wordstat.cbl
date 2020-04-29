@@ -47,7 +47,7 @@
 
        78 WORDS-LIMIT VALUE 10000.  *> hardcoded limit of unique words to hold
  
-       78 WORD-SIZE-TRESHOLD VALUE 3. *> ignore short words
+       78 WORD-SIZE-TRESHOLD VALUE 2. *> ignore short words
        01 WORD-SIZE-LIMIT-COUNTER PIC 9(5) VALUE ZERO. 
        01 WORD-SIZE-LIMIT-COUNTER-D PIC ZZ,ZZ9. 
 
@@ -184,7 +184,7 @@
            END-PERFORM
            MOVE WORD-SIZE-LIMIT-COUNTER TO WORD-SIZE-LIMIT-COUNTER-D
            DISPLAY "List ignores " FUNCTION TRIM(WORD-SIZE-LIMIT-COUNTER-D)
-                 " words shorter than " FUNCTION TRIM(WORD-SIZE-TRESHOLD) " characters."
+                 " words with " FUNCTION TRIM(WORD-SIZE-TRESHOLD) " characters or shorter."
 
            DISPLAY "Longest word: '" FUNCTION TRIM(LONGEST-WORD) "', "
                  FUNCTION TRIM (LONGEST-WORD-SIZE) " characters."
