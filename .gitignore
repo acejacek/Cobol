@@ -6,3 +6,4 @@
 *.c.l.h
 *.~lock*
 *.swp
+*.code-workspace
