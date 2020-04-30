@@ -30,3 +30,11 @@ wordstat my_text_file.txt
 
 COBOL hardly processes unstructured files, it's bit of a challenge to dynamically process random data. I cut some corners with hard-coding the limit of words in final dictionary, maximal size of word, size of single line. No idea if this is acceptable COBOL practice. Definitely, something to use a database for.
 
+## weather.cbl
+
+![terminal screenshot](screenshots/weather.png)
+First approach to *full screen* program, with proper user interface, dynamic colouring, etc. Displays weather information from sensors in Sweden. Weather info based on data from [SMHI](https://smhi.se).
+
+Data source is CSV file `smhi-opendata_1_all_latest-hour.csv`.
+
+Link to data source: https://opendata-download-metobs.smhi.se/api/version/1.0/parameter/1/station-set/all/period/latest-hour/data.csv

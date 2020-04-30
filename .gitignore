@@ -7,3 +7,5 @@
 *.~lock*
 *.swp
 *.code-workspace
+*.dylib
+*.vscode
