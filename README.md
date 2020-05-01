@@ -38,4 +38,6 @@ COBOL hardly processes unstructured files, it's bit of a challenge to dynamicall
 
 First approach to *full screen* program, with proper user interface, dynamic colouring, etc. Displays weather information from sensors in Sweden. Weather info based on data from [SMHI](https://smhi.se).
 
-Data source is CSV file `smhi-opendata_1_all_latest-hour.csv`. Link to data source via [API](https://opendata-download-metobs.smhi.se/api/version/1.0/parameter/1/station-set/all/period/latest-hour/data.csv).
+Data source is CSV file `weather.csv`. Program acquires the file by calling external program `weather.sh`, which is just a trivial `bash` script downloading fresh data from SMHI.
+
+Link to data source via [API](https://opendata-download-metobs.smhi.se/api/version/1.0/parameter/1/station-set/all/period/latest-hour/data.csv).
