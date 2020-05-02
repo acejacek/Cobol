@@ -41,3 +41,13 @@ First approach to *full screen* program, with proper user interface, dynamic col
 Data source is CSV file `weather.csv`. Program acquires the file by calling external program `weather.sh`, which is just a trivial `bash` script downloading fresh data from SMHI.
 
 Link to data source via [API](https://opendata-download-metobs.smhi.se/api/version/1.0/parameter/1/station-set/all/period/latest-hour/data.csv).
+
+## sudoku.cbl
+
+![terminal screenshot](screenshots/sudoku.png)
+
+Another full screen application. Solves sudoku, using independent programs linked statically. One of them is run recursively, to get sudoku solutions. If sudoku has more than one, program will display all solutions in sequence.
+
+Basic logic, does not prevent overloading recurrent calls with unsolvable sudoku. Entry screen is not checking against mistakes. For its clarity, solving algorithm is without major optimizations, yet it's blazingly fast.
+
+Most of the work in this coding went to screen design (even if you don't see that). If I ever code full screen app again with so many objects on screen I would build own tool to design screens and produce source code for `SCREEN SECTION`. Code uses `COPY` functionality to share common pieces between programs.
