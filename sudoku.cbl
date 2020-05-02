@@ -13,7 +13,9 @@ WORKING-STORAGE SECTION.
 
 01  SC-RESPONSE   PIC X VALUE SPACE.
     88  RESPONSE-SOLVE   VALUES "S", "s".
-    88  RESPONSE-RESET   VALUES "R", "r".
+    88  RESPONSE-TEST    VALUES "T", "t".
+    88  RESPONSE-REFRESH VALUES "R", "r".
+    88  RESPONSE-RESET   VALUES "X", "x".
     88  RESPONSE-QUIT    VALUES "Q", "q".
 
 SCREEN SECTION.
@@ -76,8 +78,7 @@ SCREEN SECTION.
                             PIC  9  BLANK WHEN ZERO USING TABLEY(3,8).
             10  BOX-9-3                               LINE 7 COL 37
                             PIC  9  BLANK WHEN ZERO USING TABLEY(3,9).
-
-
+        *> ==================
             10  BOX-1-4                               LINE 9 COL 5
                             PIC  9  BLANK WHEN ZERO USING TABLEY(4,1).
             10  BOX-2-4                               LINE 9 COL 9
@@ -132,8 +133,6 @@ SCREEN SECTION.
                             PIC  9  BLANK WHEN ZERO USING TABLEY(6,8).
             10  BOX-9-6                               LINE 13 COL 37
                             PIC  9  BLANK WHEN ZERO USING TABLEY(6,9).
-
-
         *> ==================
             10  BOX-1-7                               LINE 15 COL 5
                             PIC  9  BLANK WHEN ZERO USING TABLEY(7,1).
@@ -195,11 +194,13 @@ SCREEN SECTION.
 
     05 BOTTOM-SECTION.
         10  VALUE "0 = EMPTY CELL"                      LINE 21 COL 5.
-        10  VALUE "R - RESET"                           LINE 22 COL 30.
-        10  VALUE "S - SOLVE"                           LINE 23 COL 30.
-        10  VALUE "Q - TO QUIT"                         LINE 24 COL 30.
-        10  VALUE "ENTER RESPONSE"                      LINE 25 COL 30.
-        10  RESPONSE-INPUT                              LINE 25 COL 45
+        10  VALUE "S - SOLVE"                           LINE 22 COL 30.
+        10  VALUE "T - TEST DATA"                       LINE 23 COL 30.
+        10  VALUE "R - REFRESH"                         LINE 24 COL 30.    
+        10  VALUE "X - RESET"                           LINE 25 COL 30.
+        10  VALUE "Q - TO QUIT"                         LINE 26 COL 30.
+        10  VALUE "ENTER RESPONSE:"                     LINE 27 COL 30.
+        10  RESPONSE-INPUT                              LINE 27 COL 46
                     PIC X   AUTO        TO SC-RESPONSE.
 
 01  BLANK-SCREEN.
@@ -208,8 +209,7 @@ SCREEN SECTION.
 
 PROCEDURE DIVISION.
 
-    PERFORM FILL-TEST-DATA
-
+    *> PERFORM FILL-TEST-DATA
     PERFORM UNTIL 0 > 1   
         PERFORM DISPLAY-SCREEN
         CALL 'TABLE-ANALYSIS' USING SUDOKU-TABLE, SOLUTIONS-COUNTER
@@ -219,7 +219,7 @@ PROCEDURE DIVISION.
 
 DISPLAY-SCREEN.
     PERFORM SCREEN-LOOP UNTIL RESPONSE-SOLVE
-    *> DISPLAY BLANK-SCREEN
+    DISPLAY "SOLVING..." FOREGROUND-COLOR 0 BACKGROUND-COLOR 4  LINE 23 COL 7
 .
 SCREEN-LOOP.
     DISPLAY SUDOKU-SCREEN
@@ -233,6 +233,12 @@ SCREEN-LOOP.
     IF RESPONSE-QUIT THEN
         PERFORM FINISH
     END-IF
+    IF RESPONSE-TEST THEN
+        PERFORM FILL-TEST-DATA
+    END-IF
+     IF RESPONSE-REFRESH THEN
+        PERFORM REFRESH-DATA
+    END-IF   
     MOVE SPACE TO RESPONSE-INPUT
 .
 
@@ -251,6 +257,10 @@ FILL-TEST-DATA.
     MOVE "076029000" TO TABLEX(7)
     MOVE "054806090" TO TABLEX(8)
     MOVE "000003765" TO TABLEX(9)
+.
+
+REFRESH-DATA.
+    DISPLAY SUDOKU-SCREEN
 .
 
 SHOW-FINAL-RESULTS.
@@ -608,25 +618,28 @@ SCREEN SECTION.
     05 BOTTOM-SECTION.
         10  VALUE "N - NEXT SOLUTION"                   LINE 23 COL 30.
         10  VALUE "Q - TO QUIT"                         LINE 24 COL 30.
-        10  VALUE "ENTER RESPONSE"                      LINE 25 COL 30.
-        10  RESPONSE-INPUT                              LINE 25 COL 45
+        10  VALUE "ENTER RESPONSE:"                     LINE 25 COL 30.
+        10  RESPONSE-INPUT                              LINE 25 COL 46
                     PIC X    AUTO    TO SC-RESPONSE.
 
 PROCEDURE DIVISION USING SUDOKU-TABLE, SOLUTIONS-COUNTER.
 
 DISPLAY-SCREEN.
-    PERFORM SCREEN-LOOP UNTIL RESPONSE-NEXT
+    PERFORM SCREEN-LOOP 
     MOVE SPACE TO RESPONSE-INPUT
     MOVE SPACE TO SC-RESPONSE
+    DISPLAY "SOLVING NEXT..." FOREGROUND-COLOR 0 BACKGROUND-COLOR 4  LINE 23 COL 7
     GOBACK
 .
 SCREEN-LOOP.
-    DISPLAY SUDOKU-SCREEN
-    ACCEPT SUDOKU-SCREEN
+    PERFORM UNTIL RESPONSE-NEXT
+        DISPLAY SUDOKU-SCREEN
+        ACCEPT SUDOKU-SCREEN
 
-    IF RESPONSE-QUIT THEN
-        STOP RUN
-    END-IF
+        IF RESPONSE-QUIT THEN
+            STOP RUN
+        END-IF
+    END-PERFORM
 .
 
 END PROGRAM SHOW-SUDOKU-BOARD.
