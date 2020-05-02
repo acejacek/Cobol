@@ -21,179 +21,177 @@ SCREEN SECTION.
     05  HEADER-SECTION.
         10  VALUE "ENTER KNOWN VALUES" UNDERLINE BLANK SCREEN    LINE 1 COL 13.
 
-    05  CONTENT-SECTION.
-        10  BOX-1-1                               LINE 3 COL 10
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(1,1).
-        10  BOX-2-1                               LINE 3 COL 13
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(1,2).
-        10  BOX-3-1                               LINE 3 COL 16
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(1,3).
-        10  BOX-4-1                               LINE 3 COL 19
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(1,4).
-        10  BOX-5-1                               LINE 3 COL 22
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(1,5).
-        10  BOX-6-1                               LINE 3 COL 25
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(1,6).
-        10  BOX-7-1                               LINE 3 COL 28
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(1,7).
-        10  BOX-8-1                               LINE 3 COL 31
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(1,8).
-        10  BOX-9-1                               LINE 3 COL 34
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(1,9).
-        10  BOX-1-2                               LINE 5 COL 10
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(2,1).
-        10  BOX-2-2                               LINE 5 COL 13
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(2,2).
-        10  BOX-3-2                               LINE 5 COL 16
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(2,3).
-        10  BOX-4-2                               LINE 5 COL 19
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(2,4).
-        10  BOX-5-2                               LINE 5 COL 22
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(2,5).
-        10  BOX-6-2                               LINE 5 COL 25
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(2,6).
-        10  BOX-7-2                               LINE 5 COL 28
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(2,7).
-        10  BOX-8-2                               LINE 5 COL 31
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(2,8).
-        10  BOX-9-2                               LINE 5 COL 34
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(2,9).
-        10  BOX-1-3                               LINE 7 COL 10
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(3,1).
-        10  BOX-2-3                               LINE 7 COL 13
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(3,2).
-        10  BOX-3-3                               LINE 7 COL 16
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(3,3).
-        10  BOX-4-3                               LINE 7 COL 19
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(3,4).
-        10  BOX-5-3                               LINE 7 COL 22
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(3,5).
-        10  BOX-6-3                               LINE 7 COL 25
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(3,6).
-        10  BOX-7-3                               LINE 7 COL 28
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(3,7).
-        10  BOX-8-3                               LINE 7 COL 31
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(3,8).
-        10  BOX-9-3                               LINE 7 COL 34
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(3,9).
-        10  LINE-DIVIDER                          LINE 8 COL 10
-            VALUE "-------------------------".
+        05  CONTENT-SECTION.
+            10  BOX-1-1                               LINE 3 COL 5
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(1,1).
+            10  BOX-2-1                               LINE 3 COL 9
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(1,2).
+            10  BOX-3-1                               LINE 3 COL 13 
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(1,3).
+            10  BOX-4-1                               LINE 3 COL 17
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(1,4).
+            10  BOX-5-1                               LINE 3 COL 21
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(1,5).
+            10  BOX-6-1                               LINE 3 COL 25
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(1,6).
+            10  BOX-7-1                               LINE 3 COL 29
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(1,7).
+            10  BOX-8-1                               LINE 3 COL 33
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(1,8).
+            10  BOX-9-1                               LINE 3 COL 37
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(1,9).
+            10  BOX-1-2                               LINE 5 COL 5
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(2,1).
+            10  BOX-2-2                               LINE 5 COL 9
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(2,2).
+            10  BOX-3-2                               LINE 5 COL 13
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(2,3).
+            10  BOX-4-2                               LINE 5 COL 17
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(2,4).
+            10  BOX-5-2                               LINE 5 COL 21
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(2,5).
+            10  BOX-6-2                               LINE 5 COL 25
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(2,6).
+            10  BOX-7-2                               LINE 5 COL 29
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(2,7).
+            10  BOX-8-2                               LINE 5 COL 33
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(2,8).
+            10  BOX-9-2                               LINE 5 COL 37
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(2,9).
+            10  BOX-1-3                               LINE 7 COL 5
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(3,1).
+            10  BOX-2-3                               LINE 7 COL 9
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(3,2).
+            10  BOX-3-3                               LINE 7 COL 13
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(3,3).
+            10  BOX-4-3                               LINE 7 COL 17
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(3,4).
+            10  BOX-5-3                               LINE 7 COL 21
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(3,5).
+            10  BOX-6-3                               LINE 7 COL 25
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(3,6).
+            10  BOX-7-3                               LINE 7 COL 29
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(3,7).
+            10  BOX-8-3                               LINE 7 COL 33
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(3,8).
+            10  BOX-9-3                               LINE 7 COL 37
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(3,9).
 
-        10  BOX-1-4                               LINE 9 COL 10
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(4,1).
-        10  BOX-2-4                               LINE 9 COL 13
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(4,2).
-        10  BOX-3-4                               LINE 9 COL 16
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(4,3).
-        10  BOX-4-4                               LINE 9 COL 19
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(4,4).
-        10  BOX-5-4                               LINE 9 COL 22
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(4,5).
-        10  BOX-6-4                               LINE 9 COL 25
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(4,6).
-        10  BOX-7-4                               LINE 9 COL 28
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(4,7).
-        10  BOX-8-4                               LINE 9 COL 31
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(4,8).
-        10  BOX-9-4                               LINE 9 COL 34
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(4,9).
-        10  BOX-1-5                               LINE 11 COL 10
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(5,1).
-        10  BOX-2-5                               LINE 11 COL 13
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(5,2).
-        10  BOX-3-5                               LINE 11 COL 16
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(5,3).
-        10  BOX-4-5                               LINE 11 COL 19
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(5,4).
-        10  BOX-5-5                               LINE 11 COL 22
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(5,5).
-        10  BOX-6-5                               LINE 11 COL 25
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(5,6).
-        10  BOX-7-5                               LINE 11 COL 28
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(5,7).
-        10  BOX-8-5                               LINE 11 COL 31
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(5,8).
-        10  BOX-9-5                               LINE 11 COL 34
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(5,9).
-        10  BOX-1-6                               LINE 13 COL 10
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(6,1).
-        10  BOX-2-6                               LINE 13 COL 13
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(6,2).
-        10  BOX-3-6                               LINE 13 COL 16
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(6,3).
-        10  BOX-4-6                               LINE 13 COL 19
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(6,4).
-        10  BOX-5-6                               LINE 13 COL 22
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(6,5).
-        10  BOX-6-6                               LINE 13 COL 25
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(6,6).
-        10  BOX-7-6                               LINE 13 COL 28
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(6,7).
-        10  BOX-8-6                               LINE 13 COL 31
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(6,8).
-        10  BOX-9-6                               LINE 13 COL 34
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(6,9).
 
-        10  LINE-DIVIDER                          LINE 14 COL 10
-                VALUE "-------------------------".
-    *> ==================
-        10  BOX-1-7                               LINE 15 COL 10
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(7,1).
-        10  BOX-2-7                               LINE 15 COL 13
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(7,2).
-        10  BOX-3-7                               LINE 15 COL 16
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(7,3).
-        10  BOX-4-7                               LINE 15 COL 19
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(7,4).
-        10  BOX-5-7                               LINE 15 COL 22
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(7,5).
-        10  BOX-6-7                               LINE 15 COL 25
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(7,6).
-        10  BOX-7-7                               LINE 15 COL 28
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(7,7).
-        10  BOX-8-7                               LINE 15 COL 31
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(7,8).
-        10  BOX-9-7                               LINE 15 COL 34
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(7,9).
-        10  BOX-1-8                               LINE 17 COL 10
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(8,1).
-        10  BOX-2-8                               LINE 17 COL 13
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(8,2).
-        10  BOX-3-8                               LINE 17 COL 16
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(8,3).
-        10  BOX-4-8                               LINE 17 COL 19
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(8,4).
-        10  BOX-5-8                               LINE 17 COL 22
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(8,5).
-        10  BOX-6-8                               LINE 17 COL 25
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(8,6).
-        10  BOX-7-8                               LINE 17 COL 28
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(8,7).
-        10  BOX-8-8                               LINE 17 COL 31
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(8,8).
-        10  BOX-9-8                               LINE 17 COL 34
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(8,9).
-        10  BOX-1-9                               LINE 19 COL 10
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(9,1).
-        10  BOX-2-9                               LINE 19 COL 13
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(9,2).
-        10  BOX-3-9                               LINE 19 COL 16
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(9,3).
-        10  BOX-4-9                               LINE 19 COL 19
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(9,4).
-        10  BOX-5-9                               LINE 19 COL 22
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(9,5).
-        10  BOX-6-9                               LINE 19 COL 25
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(9,6).
-        10  BOX-7-9                               LINE 19 COL 28
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(9,7).
-        10  BOX-8-9                               LINE 19 COL 31
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(9,8).
-        10  BOX-9-9                               LINE 19 COL 34
-                        PIC  9  BLANK WHEN ZERO USING TABLEY(9,9).
+            10  BOX-1-4                               LINE 9 COL 5
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(4,1).
+            10  BOX-2-4                               LINE 9 COL 9
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(4,2).
+            10  BOX-3-4                               LINE 9 COL 13
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(4,3).
+            10  BOX-4-4                               LINE 9 COL 17
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(4,4).
+            10  BOX-5-4                               LINE 9 COL 21
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(4,5).
+            10  BOX-6-4                               LINE 9 COL 25
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(4,6).
+            10  BOX-7-4                               LINE 9 COL 29
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(4,7).
+            10  BOX-8-4                               LINE 9 COL 33
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(4,8).
+            10  BOX-9-4                               LINE 9 COL 37
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(4,9).
+            10  BOX-1-5                               LINE 11 COL 5
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(5,1).
+            10  BOX-2-5                               LINE 11 COL 9
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(5,2).
+            10  BOX-3-5                               LINE 11 COL 13
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(5,3).
+            10  BOX-4-5                               LINE 11 COL 17
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(5,4).
+            10  BOX-5-5                               LINE 11 COL 21
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(5,5).
+            10  BOX-6-5                               LINE 11 COL 25
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(5,6).
+            10  BOX-7-5                               LINE 11 COL 29
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(5,7).
+            10  BOX-8-5                               LINE 11 COL 33
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(5,8).
+            10  BOX-9-5                               LINE 11 COL 37
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(5,9).
+            10  BOX-1-6                               LINE 13 COL 5
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(6,1).
+            10  BOX-2-6                               LINE 13 COL 9
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(6,2).
+            10  BOX-3-6                               LINE 13 COL 13
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(6,3).
+            10  BOX-4-6                               LINE 13 COL 17
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(6,4).
+            10  BOX-5-6                               LINE 13 COL 21
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(6,5).
+            10  BOX-6-6                               LINE 13 COL 25
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(6,6).
+            10  BOX-7-6                               LINE 13 COL 29
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(6,7).
+            10  BOX-8-6                               LINE 13 COL 33
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(6,8).
+            10  BOX-9-6                               LINE 13 COL 37
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(6,9).
 
-        10  V-DIVIDER VALUE "|"   LINE 3 COL 18.
-        10  V-DIVIDER VALUE "|"   LINE 3 COL 26.
+
+        *> ==================
+            10  BOX-1-7                               LINE 15 COL 5
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(7,1).
+            10  BOX-2-7                               LINE 15 COL 9
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(7,2).
+            10  BOX-3-7                               LINE 15 COL 13
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(7,3).
+            10  BOX-4-7                               LINE 15 COL 17
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(7,4).
+            10  BOX-5-7                               LINE 15 COL 21
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(7,5).
+            10  BOX-6-7                               LINE 15 COL 25
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(7,6).
+            10  BOX-7-7                               LINE 15 COL 29
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(7,7).
+            10  BOX-8-7                               LINE 15 COL 33
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(7,8).
+            10  BOX-9-7                               LINE 15 COL 37
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(7,9).
+            10  BOX-1-8                               LINE 17 COL 5
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(8,1).
+            10  BOX-2-8                               LINE 17 COL 9
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(8,2).
+            10  BOX-3-8                               LINE 17 COL 13
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(8,3).
+            10  BOX-4-8                               LINE 17 COL 17
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(8,4).
+            10  BOX-5-8                               LINE 17 COL 21
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(8,5).
+            10  BOX-6-8                               LINE 17 COL 25
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(8,6).
+            10  BOX-7-8                               LINE 17 COL 29
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(8,7).
+            10  BOX-8-8                               LINE 17 COL 33
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(8,8).
+            10  BOX-9-8                               LINE 17 COL 37
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(8,9).
+            10  BOX-1-9                               LINE 19 COL 5
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(9,1).
+            10  BOX-2-9                               LINE 19 COL 9
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(9,2).
+            10  BOX-3-9                               LINE 19 COL 13
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(9,3).
+            10  BOX-4-9                               LINE 19 COL 17
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(9,4).
+            10  BOX-5-9                               LINE 19 COL 21
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(9,5).
+            10  BOX-6-9                               LINE 19 COL 25
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(9,6).
+            10  BOX-7-9                               LINE 19 COL 29
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(9,7).
+            10  BOX-8-9                               LINE 19 COL 33
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(9,8).
+            10  BOX-9-9                               LINE 19 COL 37
+                            PIC  9  BLANK WHEN ZERO USING TABLEY(9,9).
+    
+    05  SCREEN-DIVIDERS FOREGROUND-COLOR 3 .
+        COPY "sudoku-dividers.cbl".
 
     05 BOTTOM-SECTION.
         10  VALUE "R - RESET"                           LINE 22 COL 30.
@@ -224,8 +222,10 @@ DISPLAY-SCREEN.
     *> DISPLAY BLANK-SCREEN
 .
 SCREEN-LOOP.
-    DISPLAY SUDOKU-SCREEN
-    ACCEPT SUDOKU-SCREEN
+    DISPLAY HEADER-SECTION
+    DISPLAY CONTENT-SECTION
+    DISPLAY SCREEN-DIVIDERS
+    ACCEPT BOTTOM-SECTION
 
     IF RESPONSE-RESET THEN
         PERFORM VARYING IDX FROM 1 BY 1 UNTIL IDX > 9
@@ -433,183 +433,178 @@ LINKAGE SECTION.
 SCREEN SECTION.
 01  SUDOKU-SCREEN.
     05  HEADER-SECTION.
-        10  VALUE   "SOLUTION # " UNDERLINE BLANK SCREEN    LINE 1 COL 16.
+        10  VALUE   "SOLUTION # " UNDERLINE BLANK SCREEN    LINE 1 COL 13.
         10  SC-COUNTER           UNDERLINE  HIGHLIGHT       LINE 1 COL 26
                         PIC Z(4) FROM SOLUTIONS-COUNTER.
 
     05  CONTENT-SECTION.
-        10  BOX-1-1                               LINE 3 COL 10
+        10  BOX-1-1                               LINE 3 COL 5
                         PIC  9  FROM TABLEY(1,1).
-        10  BOX-2-1                               LINE 3 COL 13
+        10  BOX-2-1                               LINE 3 COL 9
                         PIC  9  FROM TABLEY(1,2).
-        10  BOX-3-1                               LINE 3 COL 16
+        10  BOX-3-1                               LINE 3 COL 13
                         PIC  9  FROM TABLEY(1,3).
-        10  BOX-4-1                               LINE 3 COL 19
+        10  BOX-4-1                               LINE 3 COL 17
                         PIC  9  FROM TABLEY(1,4).
-        10  BOX-5-1                               LINE 3 COL 22
+        10  BOX-5-1                               LINE 3 COL 21
                         PIC  9  FROM TABLEY(1,5).
         10  BOX-6-1                               LINE 3 COL 25
                         PIC  9  FROM TABLEY(1,6).
-        10  BOX-7-1                               LINE 3 COL 28
+        10  BOX-7-1                               LINE 3 COL 29
                         PIC  9  FROM TABLEY(1,7).
-        10  BOX-8-1                               LINE 3 COL 31
+        10  BOX-8-1                               LINE 3 COL 33
                         PIC  9  FROM TABLEY(1,8).
-        10  BOX-9-1                               LINE 3 COL 34
+        10  BOX-9-1                               LINE 3 COL 37
                         PIC  9  FROM TABLEY(1,9).
-        10  BOX-1-2                               LINE 5 COL 10
+        10  BOX-1-2                               LINE 5 COL 5
                         PIC  9  FROM TABLEY(2,1).
-        10  BOX-2-2                               LINE 5 COL 13
+        10  BOX-2-2                               LINE 5 COL 9
                         PIC  9  FROM TABLEY(2,2).
-        10  BOX-3-2                               LINE 5 COL 16
+        10  BOX-3-2                               LINE 5 COL 13
                         PIC  9  FROM TABLEY(2,3).
-        10  BOX-4-2                               LINE 5 COL 19
+        10  BOX-4-2                               LINE 5 COL 17
                         PIC  9  FROM TABLEY(2,4).
-        10  BOX-5-2                               LINE 5 COL 22
+        10  BOX-5-2                               LINE 5 COL 21
                         PIC  9  FROM TABLEY(2,5).
         10  BOX-6-2                               LINE 5 COL 25
                         PIC  9  FROM TABLEY(2,6).
-        10  BOX-7-2                               LINE 5 COL 28
+        10  BOX-7-2                               LINE 5 COL 29
                         PIC  9  FROM TABLEY(2,7).
-        10  BOX-8-2                               LINE 5 COL 31
+        10  BOX-8-2                               LINE 5 COL 33
                         PIC  9  FROM TABLEY(2,8).
-        10  BOX-9-2                               LINE 5 COL 34
+        10  BOX-9-2                               LINE 5 COL 37
                         PIC  9  FROM TABLEY(2,9).
-        10  BOX-1-3                               LINE 7 COL 10
+        10  BOX-1-3                               LINE 7 COL 5
                         PIC  9  FROM TABLEY(3,1).
-        10  BOX-2-3                               LINE 7 COL 13
+        10  BOX-2-3                               LINE 7 COL 9
                         PIC  9  FROM TABLEY(3,2).
-        10  BOX-3-3                               LINE 7 COL 16
+        10  BOX-3-3                               LINE 7 COL 13
                         PIC  9  FROM TABLEY(3,3).
-        10  BOX-4-3                               LINE 7 COL 19
+        10  BOX-4-3                               LINE 7 COL 17
                         PIC  9  FROM TABLEY(3,4).
-        10  BOX-5-3                               LINE 7 COL 22
+        10  BOX-5-3                               LINE 7 COL 21
                         PIC  9  FROM TABLEY(3,5).
         10  BOX-6-3                               LINE 7 COL 25
                         PIC  9  FROM TABLEY(3,6).
-        10  BOX-7-3                               LINE 7 COL 28
+        10  BOX-7-3                               LINE 7 COL 29
                         PIC  9  FROM TABLEY(3,7).
-        10  BOX-8-3                               LINE 7 COL 31
+        10  BOX-8-3                               LINE 7 COL 33
                         PIC  9  FROM TABLEY(3,8).
-        10  BOX-9-3                               LINE 7 COL 34
+        10  BOX-9-3                               LINE 7 COL 37
                         PIC  9  FROM TABLEY(3,9).
-        10  LINE-DIVIDER                          LINE 8 COL 10
-            VALUE "-------------------------".
-
-        10  BOX-1-4                               LINE 9 COL 10
+    *> ==================
+        10  BOX-1-4                               LINE 9 COL 5
                         PIC  9  FROM TABLEY(4,1).
-        10  BOX-2-4                               LINE 9 COL 13
+        10  BOX-2-4                               LINE 9 COL 9
                         PIC  9  FROM TABLEY(4,2).
-        10  BOX-3-4                               LINE 9 COL 16
+        10  BOX-3-4                               LINE 9 COL 13
                         PIC  9  FROM TABLEY(4,3).
-        10  BOX-4-4                               LINE 9 COL 19
+        10  BOX-4-4                               LINE 9 COL 17
                         PIC  9  FROM TABLEY(4,4).
-        10  BOX-5-4                               LINE 9 COL 22
+        10  BOX-5-4                               LINE 9 COL 21
                         PIC  9  FROM TABLEY(4,5).
         10  BOX-6-4                               LINE 9 COL 25
                         PIC  9  FROM TABLEY(4,6).
-        10  BOX-7-4                               LINE 9 COL 28
+        10  BOX-7-4                               LINE 9 COL 29
                         PIC  9  FROM TABLEY(4,7).
-        10  BOX-8-4                               LINE 9 COL 31
+        10  BOX-8-4                               LINE 9 COL 33
                         PIC  9  FROM TABLEY(4,8).
-        10  BOX-9-4                               LINE 9 COL 34
+        10  BOX-9-4                               LINE 9 COL 37
                         PIC  9  FROM TABLEY(4,9).
-        10  BOX-1-5                               LINE 11 COL 10
+        10  BOX-1-5                               LINE 11 COL 5
                         PIC  9  FROM TABLEY(5,1).
-        10  BOX-2-5                               LINE 11 COL 13
+        10  BOX-2-5                               LINE 11 COL 9
                         PIC  9  FROM TABLEY(5,2).
-        10  BOX-3-5                               LINE 11 COL 16
+        10  BOX-3-5                               LINE 11 COL 13
                         PIC  9  FROM TABLEY(5,3).
-        10  BOX-4-5                               LINE 11 COL 19
+        10  BOX-4-5                               LINE 11 COL 17
                         PIC  9  FROM TABLEY(5,4).
-        10  BOX-5-5                               LINE 11 COL 22
+        10  BOX-5-5                               LINE 11 COL 21
                         PIC  9  FROM TABLEY(5,5).
         10  BOX-6-5                               LINE 11 COL 25
                         PIC  9  FROM TABLEY(5,6).
-        10  BOX-7-5                               LINE 11 COL 28
+        10  BOX-7-5                               LINE 11 COL 29
                         PIC  9  FROM TABLEY(5,7).
-        10  BOX-8-5                               LINE 11 COL 31
+        10  BOX-8-5                               LINE 11 COL 33
                         PIC  9  FROM TABLEY(5,8).
-        10  BOX-9-5                               LINE 11 COL 34
+        10  BOX-9-5                               LINE 11 COL 37
                         PIC  9  FROM TABLEY(5,9).
-        10  BOX-1-6                               LINE 13 COL 10
+        10  BOX-1-6                               LINE 13 COL 5
                         PIC  9  FROM TABLEY(6,1).
-        10  BOX-2-6                               LINE 13 COL 13
+        10  BOX-2-6                               LINE 13 COL 9
                         PIC  9  FROM TABLEY(6,2).
-        10  BOX-3-6                               LINE 13 COL 16
+        10  BOX-3-6                               LINE 13 COL 13
                         PIC  9  FROM TABLEY(6,3).
-        10  BOX-4-6                               LINE 13 COL 19
+        10  BOX-4-6                               LINE 13 COL 17
                         PIC  9  FROM TABLEY(6,4).
-        10  BOX-5-6                               LINE 13 COL 22
+        10  BOX-5-6                               LINE 13 COL 21
                         PIC  9  FROM TABLEY(6,5).
         10  BOX-6-6                               LINE 13 COL 25
                         PIC  9  FROM TABLEY(6,6).
-        10  BOX-7-6                               LINE 13 COL 28
+        10  BOX-7-6                               LINE 13 COL 29
                         PIC  9  FROM TABLEY(6,7).
-        10  BOX-8-6                               LINE 13 COL 31
+        10  BOX-8-6                               LINE 13 COL 33
                         PIC  9  FROM TABLEY(6,8).
-        10  BOX-9-6                               LINE 13 COL 34
+        10  BOX-9-6                               LINE 13 COL 37
                         PIC  9  FROM TABLEY(6,9).
-
-        10  LINE-DIVIDER                          LINE 14 COL 10
-                VALUE "-------------------------".
     *> ==================
-        10  BOX-1-7                               LINE 15 COL 10
+        10  BOX-1-7                               LINE 15 COL 5
                         PIC  9  FROM TABLEY(7,1).
-        10  BOX-2-7                               LINE 15 COL 13
+        10  BOX-2-7                               LINE 15 COL 9
                         PIC  9  FROM TABLEY(7,2).
-        10  BOX-3-7                               LINE 15 COL 16
+        10  BOX-3-7                               LINE 15 COL 13
                         PIC  9  FROM TABLEY(7,3).
-        10  BOX-4-7                               LINE 15 COL 19
+        10  BOX-4-7                               LINE 15 COL 17
                         PIC  9  FROM TABLEY(7,4).
-        10  BOX-5-7                               LINE 15 COL 22
+        10  BOX-5-7                               LINE 15 COL 21
                         PIC  9  FROM TABLEY(7,5).
         10  BOX-6-7                               LINE 15 COL 25
                         PIC  9  FROM TABLEY(7,6).
-        10  BOX-7-7                               LINE 15 COL 28
+        10  BOX-7-7                               LINE 15 COL 29
                         PIC  9  FROM TABLEY(7,7).
-        10  BOX-8-7                               LINE 15 COL 31
+        10  BOX-8-7                               LINE 15 COL 33
                         PIC  9  FROM TABLEY(7,8).
-        10  BOX-9-7                               LINE 15 COL 34
+        10  BOX-9-7                               LINE 15 COL 37
                         PIC  9  FROM TABLEY(7,9).
-        10  BOX-1-8                               LINE 17 COL 10
+        10  BOX-1-8                               LINE 17 COL 5
                         PIC  9  FROM TABLEY(8,1).
-        10  BOX-2-8                               LINE 17 COL 13
+        10  BOX-2-8                               LINE 17 COL 9
                         PIC  9  FROM TABLEY(8,2).
-        10  BOX-3-8                               LINE 17 COL 16
+        10  BOX-3-8                               LINE 17 COL 13
                         PIC  9  FROM TABLEY(8,3).
-        10  BOX-4-8                               LINE 17 COL 19
+        10  BOX-4-8                               LINE 17 COL 17
                         PIC  9  FROM TABLEY(8,4).
-        10  BOX-5-8                               LINE 17 COL 22
+        10  BOX-5-8                               LINE 17 COL 21
                         PIC  9  FROM TABLEY(8,5).
         10  BOX-6-8                               LINE 17 COL 25
                         PIC  9  FROM TABLEY(8,6).
-        10  BOX-7-8                               LINE 17 COL 28
+        10  BOX-7-8                               LINE 17 COL 29
                         PIC  9  FROM TABLEY(8,7).
-        10  BOX-8-8                               LINE 17 COL 31
+        10  BOX-8-8                               LINE 17 COL 33
                         PIC  9  FROM TABLEY(8,8).
-        10  BOX-9-8                               LINE 17 COL 34
+        10  BOX-9-8                               LINE 17 COL 37
                         PIC  9  FROM TABLEY(8,9).
-        10  BOX-1-9                               LINE 19 COL 10
+        10  BOX-1-9                               LINE 19 COL 5
                         PIC  9  FROM TABLEY(9,1).
-        10  BOX-2-9                               LINE 19 COL 13
+        10  BOX-2-9                               LINE 19 COL 9
                         PIC  9  FROM TABLEY(9,2).
-        10  BOX-3-9                               LINE 19 COL 16
+        10  BOX-3-9                               LINE 19 COL 13
                         PIC  9  FROM TABLEY(9,3).
-        10  BOX-4-9                               LINE 19 COL 19
+        10  BOX-4-9                               LINE 19 COL 17
                         PIC  9  FROM TABLEY(9,4).
-        10  BOX-5-9                               LINE 19 COL 22
+        10  BOX-5-9                               LINE 19 COL 21
                         PIC  9  FROM TABLEY(9,5).
         10  BOX-6-9                               LINE 19 COL 25
                         PIC  9  FROM TABLEY(9,6).
-        10  BOX-7-9                               LINE 19 COL 28
+        10  BOX-7-9                               LINE 19 COL 29
                         PIC  9  FROM TABLEY(9,7).
-        10  BOX-8-9                               LINE 19 COL 31
+        10  BOX-8-9                               LINE 19 COL 33
                         PIC  9  FROM TABLEY(9,8).
-        10  BOX-9-9                               LINE 19 COL 34
+        10  BOX-9-9                               LINE 19 COL 37
                         PIC  9  FROM TABLEY(9,9).
 
-        10  V-DIVIDER VALUE "|"   LINE 3 COL 18.
-        10  V-DIVIDER VALUE "|"   LINE 3 COL 26.
+    05  SCREEN-DIVIDERS FOREGROUND-COLOR 3 .
+            COPY "sudoku-dividers.cbl".
 
     05 BOTTOM-SECTION.
         10  VALUE "N - NEXT SOLUTION"                   LINE 23 COL 30.
@@ -617,9 +612,6 @@ SCREEN SECTION.
         10  VALUE "ENTER RESPONSE"                      LINE 25 COL 30.
         10  RESPONSE-INPUT                              LINE 25 COL 45
                     PIC X    AUTO    TO SC-RESPONSE.
-
-
-
 
 PROCEDURE DIVISION USING SUDOKU-TABLE, SOLUTIONS-COUNTER.
 
