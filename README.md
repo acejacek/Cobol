@@ -10,13 +10,19 @@ All programs should compile with:
 cobc -free -x -o program_name.cbl
 ```
 
-Add `-fdebugging-line` flag, if you want to see extra debug messages.
+Add `-fdebugging-line` flag, if you want to see extra debug messages. If you have `make` installed, compile process is simplified to:
+
+```bash
+make program
+```
+
+Executables will be created in local `bin` directory.
 
 ## prime.cbl
 
 ![terminal screenshot](screenshots/prime.png)
 
-I skip *Hello, world!* and did this as my first COBOL program. Blast from past, as this was the first algorithm I programed 30+ years ago, while learning *Action!* on my 8-bit Atari.
+I skip *Hello, world!* and did this as my first COBOL program. Blast from past, as this was the first algorithm I programmed 30+ years ago, while learning *Action!* on my 8-bit Atari.
 
 Generic implementation of [Sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes). Finds all prime numbers up to given limit. Basic sanity checks on user entry. Arbitrary maximal limit set to 10000.
 
