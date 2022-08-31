@@ -629,7 +629,7 @@ SCREEN SECTION.
     05 BOTTOM-SECTION.
         10  VALUE "STEPS TO SOLUTION: "                 LINE 21 COL 10.
         10  SC-COUNTER                                  LINE 21 COL 29
-                     FROM FUNCTION TRIM(STEPS-COUNTER-D).          
+                   PIC X(10)  FROM FUNCTION TRIM(STEPS-COUNTER-D).          
         10  VALUE "N - NEXT SOLUTION"                   LINE 23 COL 30.
         10  VALUE "Q - TO QUIT"                         LINE 24 COL 30.
         10  VALUE "ENTER RESPONSE:"                     LINE 25 COL 30.
